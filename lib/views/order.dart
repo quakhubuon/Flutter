@@ -17,6 +17,120 @@ class OrderPage extends StatelessWidget {
           )
         ],
       ),
+      drawer: Drawer(
+          child: Column(
+            children: [
+              Container(
+                width: 310,
+                height: 250,
+                decoration: BoxDecoration(
+                    color: Colors.grey
+                ),
+                child: Padding(
+                  padding: const EdgeInsets.only(left: 20.0, top: 70),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      CircleAvatar(
+                        radius: 45,
+                        backgroundColor: Colors.white,
+                        backgroundImage: AssetImage("assets/images/avatar.jpg",),
+
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(top: 10.0),
+                        child: Text("Trần Tường Minh", style: TextStyle(color: Colors.white, fontSize: 17),),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(top: 10.0),
+                        child: Text("tranminh2014.tm@gmail.com", style: TextStyle(color: Colors.white, fontSize: 17),),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(20.0),
+                child: Column(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.only(bottom: 25.0),
+                      child: Row(
+                        children: [
+                          Icon(Icons.home, size: 30,),
+                          Padding(
+                            padding: const EdgeInsets.only(left: 25.0),
+                            child: Text("Home", style: TextStyle(fontSize: 20, fontWeight: FontWeight.w500),),
+                          )
+                        ],
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(bottom: 25.0),
+                      child: Row(
+                        children: [
+                          Icon(Icons.person, size: 30,),
+                          Padding(
+                            padding: const EdgeInsets.only(left: 25.0),
+                            child: Text("My Account", style: TextStyle(fontSize: 20, fontWeight: FontWeight.w500),),
+                          )
+                        ],
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(bottom: 25.0),
+                      child: Row(
+                        children: [
+                          Icon(Icons.shopping_cart, size: 30,),
+                          Padding(
+                            padding: const EdgeInsets.only(left: 25.0),
+                            child: Text("My Orders", style: TextStyle(fontSize: 20, fontWeight: FontWeight.w500),),
+                          )
+                        ],
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(bottom: 25.0),
+                      child: Row(
+                        children: [
+                          Icon(Icons.favorite, size: 30,),
+                          Padding(
+                            padding: const EdgeInsets.only(left: 25.0),
+                            child: Text("My Wish ist", style: TextStyle(fontSize: 20, fontWeight: FontWeight.w500),),
+                          )
+                        ],
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(bottom: 25.0),
+                      child: Row(
+                        children: [
+                          Icon(Icons.settings, size: 30,),
+                          Padding(
+                            padding: const EdgeInsets.only(left: 25.0),
+                            child: Text("Settings", style: TextStyle(fontSize: 20, fontWeight: FontWeight.w500),),
+                          )
+                        ],
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(bottom: 25.0),
+                      child: Row(
+                        children: [
+                          Icon(Icons.logout, size: 30,),
+                          Padding(
+                            padding: const EdgeInsets.only(left: 25.0),
+                            child: Text("Log Out", style: TextStyle(fontSize: 20, fontWeight: FontWeight.w500),),
+                          )
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+              )
+            ],
+          )
+      ),
       body: SingleChildScrollView(
         child: Column(
           children: [

@@ -1,7 +1,9 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:gear/views/cart.dart';
+import 'package:gear/views/checkout.dart';
 import 'package:gear/views/detail.dart';
+import 'package:gear/views/history.dart';
 import 'package:gear/views/home.dart';
 import 'package:gear/views/auth/login.dart';
 import 'package:gear/views/order.dart';
@@ -33,7 +35,7 @@ class MyApp extends StatelessWidget {
           centerTitle: true,
         )
       ),
-      home: const LoginPage(),
+      home: const HistoryOrder(),
     );
   }
 }
